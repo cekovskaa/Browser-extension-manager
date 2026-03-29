@@ -2,7 +2,7 @@
 
 Frontend Mentor challenge – Browser extensions manager UI built with HTML, CSS, JavaScript, and Bootstrap.
 
-A solution to the [Browser Extensions Manager UI Challenge](https://www.frontendmentor.io/challenges) on Frontend Mentor.
+A solution to the [Browser Extensions Manager UI Challenge](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp) on Frontend Mentor.
 
 ## Overview
 
