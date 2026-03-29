@@ -56,4 +56,4 @@ The designs for this project are provided by Frontend Mentor and are located in 
 ## Acknowledgements
 
 - Challenge by [Frontend Mentor](https://www.frontendmentor.io/)
-- Built by [Your Name](https://github.com/your-username)
+
