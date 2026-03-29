@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variable font */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/assets/fonts/NotoSans-VariableFont_wdth\,wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900; /* range of weights available */
+  font-style: normal;
+}
+
+/* Italic variable font */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/assets/fonts/NotoSans-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype-variations");
+  font-weight: 100 900;
+  font-style: italic;
+}
+
+/* Static bold font fallback */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/assets/fonts/static/NotoSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: bold;
+}
+
+/* Static regular font fallback */
+@font-face {
+  font-family: "Noto Sans";
+  src: url("/assets/fonts/static/NotoSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 30px;
+  background-color: #eaf3fd;
+  color: #0d1b43;
+}
+
+/* Dark mode styles*/
+body.dark-mode {
+  background-color: #050b21;
+  color: white;
+}
+
+body.dark-mode .nav-mode {
+  background-color: #1f2535;
+  border: none;
+}
+
+body.dark-mode .mode-btn {
+  background-color: #2f354c;
+}
+
+body.dark-mode .navbar-brand {
+  color: white;
+}
+
+.mode-btn {
+  padding-inline: 10px;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  border: none;
+  border-radius: 10px;
+  background-color: #eeeeee;
+}
+
+.mode-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.navbar {
+  border-radius: 20px;
+}
+
+.nav-mode {
+  background-color: #fcfdff;
+  border: 1px solid #dfe4ef;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  padding-block: 3px;
+  color: #081541;
+}
+
+/* extensions header styles */
+
+.extensions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.extensions-heading {
+  font-weight: 700;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+
+.custom-btn {
+  padding: 7px 17px;
+  border: 1px solid #d9e0e9;
+  background-color: #fdfdff;
+  border-radius: 20px;
+  color: #20243c;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.custom-btn.active {
+  background-color: #c7221c;
+  color: white;
+  border: none;
+}
+
+/* custom button dark mode styles */
+
+body.dark-mode .custom-btn {
+  background-color: #2f354c;
+  color: white;
+  border: 1px solid #545a71;
+}
+
+body.dark-mode .custom-btn.active {
+  background-color: #f35c54;
+  color: #000000f1;
+  border: none;
+}
+
+/* card styles */
+
+.custom-card {
+  border-radius: 18px;
+  background-color: #fcfeff;
+  border: 1px solid #dbe0ea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.form-check-input {
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #c81e1c;
+  border-color: #c81e1c;
+  cursor: pointer;
+}
+
+body.dark-mode .custom-card {
+  color: white;
+  background-color: #1f2535;
+  border: 1px solid #494e5f;
+  box-shadow: 0 4px 12px rgba(146, 145, 145, 0.249);
+}
+
+body.dark-mode .card-text {
+  color: #a0a8b8 !important; /* override Bootstrap's text-muted */
+}
+
+body.dark-mode .form-check-input:checked {
+  background-color: #ed5d54;
+  border-color: #ed5d54;
+}
+
+body.dark-mode .remove-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #515666;
+}
+
+body.dark-mode .remove-btn:hover {
+  background-color: #f45c53;
+  color: #49081d;
+  border: 1px solid #f45c53;
+}
+
+.remove-btn {
+  border: 1px solid #ccd0d1;
+  background-color: transparent;
+  border-radius: 25px;
+  color: #19223a;
+  font-size: 13px;
+}
+
+.remove-btn:hover {
+  background-color: #ca2314;
+  border: 1px solid #ca2314;
+  color: white;
+}
+
+.extension-logo {
+  width: 48px;
+  height: 48px;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+  .card-text {
+    font-size: 10px;
+  }
+
+  .card-title {
+    font-size: 13px;
+  }
+
+  .extension-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+   .extensions-heading {
+    font-size: 28px;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    width: 90%;
+  }
+
+  .extension-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .card-title {
+    font-size: 17px;
+  }
+
+  .card-text {
+    font-size: 0.875em;
+  }
+
+  .extensions-header {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .extensions-heading {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .custom-btn {
+    padding: 6px 18px;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+}
