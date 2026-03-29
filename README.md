@@ -21,7 +21,7 @@ A browser extension manager interface that lets users view, filter, toggle, and 
 
 - Semantic HTML5
 - CSS3 with custom properties
-- [Bootstrap 5](https://getbootstrap.com/) — layout, grid, cards, form switches, and utility classes
+- [Bootstrap 5](https://getbootstrap.com/) — layout, cards  and utility classes
 - Vanilla JavaScript (no frameworks)
 
 ## What I Learned
