@@ -49,6 +49,10 @@ A browser extension manager interface that lets users view, filter, toggle, and 
 
 The extensions are loaded from `data.json` on page load. Each extension object contains a `name`, `description`, `logo` path, and `isActive` boolean. Cards are rendered dynamically into a Bootstrap grid. The toggle switch mutates `isActive` directly on the source array and re-renders the current filter view. Removing an extension splices it from the array and re-renders. Dark mode and the active filter are saved to `localStorage` and restored immediately on load before any rendering happens.
 
+## Design
+
+The designs for this project are provided by Frontend Mentor and are located in the `/design` folder. The folder contains both light and dark mode versions of the UI at desktop and mobile breakpoints. Every detail of the design was followed as closely as possible — including card layout, typography, spacing, button styles, toggle switch appearance, color palette, and the dark mode color overrides — using Bootstrap utilities combined with custom CSS.
+
 ## Acknowledgements
 
 - Challenge by [Frontend Mentor](https://www.frontendmentor.io/)
