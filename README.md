@@ -30,8 +30,7 @@ A browser extension manager interface that lets users view, filter, toggle, and 
 - Managing application state (extensions array, active filter) in plain JS
 - Using `localStorage` to persist UI state across reloads
 - Dynamically wiring up event listeners to elements created at runtime
-- Using `body.dark-mode` as a CSS ancestor to style all child components without touching them in JS
-- Fixing Bootstrap's toggle switch appearance using a custom SVG `background-image`
+
 
 ## Project Structure
 
@@ -42,7 +41,7 @@ A browser extension manager interface that lets users view, filter, toggle, and 
 ├── styles/
 │   └── index.css        # Custom styles and dark mode overrides
 ├── js/
-│   └── theme.js         # All JS logic (theme, filtering, rendering)
+│   └── index.js         # All JS logic (theme, filtering, rendering)
 └── index.html
 ```
 
